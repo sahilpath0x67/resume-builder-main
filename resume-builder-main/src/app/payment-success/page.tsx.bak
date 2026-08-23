@@ -1,0 +1,39 @@
+// // src/app/payment-success/page.tsx
+// 'use client';
+// import { useEffect, useState } from 'react';
+// import { useRouter } from 'next/navigation';
+// import { useAuth } from '@/lib/useAuth';
+
+// export default function PaymentSuccess() {
+//   const router = useRouter();
+//   const { refreshProfile } = useAuth();
+//   const [counting, setCounting] = useState(5);
+
+//   useEffect(() => {
+//     // Refresh the user's pro status from Firestore
+//     refreshProfile();
+//     const interval = setInterval(() => {
+//       setCounting(c => {
+//         if (c <= 1) { clearInterval(interval); router.push('/'); }
+//         return c - 1;
+//       });
+//     }, 1000);
+//     return () => clearInterval(interval);
+//   }, []);
+
+//   return (
+//     <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f9fafb', fontFamily: 'Inter, sans-serif' }}>
+//       <div style={{ textAlign: 'center', maxWidth: 400, padding: 32 }}>
+//         <div style={{ width: 72, height: 72, borderRadius: '50%', background: '#d1fae5', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', fontSize: 32 }}>✓</div>
+//         <h1 style={{ fontSize: 24, fontWeight: 700, color: '#111827', marginBottom: 8 }}>You're now Pro! 🎉</h1>
+//         <p style={{ color: '#6b7280', fontSize: 14, lineHeight: 1.6, marginBottom: 24 }}>
+//           All AI features are now unlocked. Your subscription is active and will renew monthly.
+//         </p>
+//         <p style={{ color: '#9ca3af', fontSize: 13 }}>Redirecting in {counting} seconds…</p>
+//         <button onClick={() => router.push('/')} style={{ marginTop: 16, padding: '10px 24px', background: '#1D9E75', color: '#fff', border: 'none', borderRadius: 12, fontSize: 13, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit' }}>
+//           Go to my resumes →
+//         </button>
+//       </div>
+//     </div>
+//   );
+// }

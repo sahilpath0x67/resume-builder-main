@@ -1,0 +1,27 @@
+{
+  "name": "NepAstra Resume Builder",
+  "short_name": "NepAstra",
+  "description": "Build ATS-friendly resumes, cover letters, LinkedIn summaries, and recruiter-ready CVs with NepAstra AI tools.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#1D4ED8",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/nepastra-logo.jpeg",
+      "sizes": "1600x900",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["productivity", "business"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
