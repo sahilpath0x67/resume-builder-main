@@ -3,7 +3,7 @@ import './globals.css';
 import ErrorBoundary from '@/components/ErrorBoundary';
 
 
-
+//checkinh changes
 const SITE_URL = (process.env.NEXT_PUBLIC_URL || 'https://nepastra.com').replace(/\/+$/, '');
 const SITE_NAME = 'NepAstra';
 const SITE_TITLE = 'NepAstra Resume Builder - AI CV Maker';
