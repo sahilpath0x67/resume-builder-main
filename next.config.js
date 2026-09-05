@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   outputFileTracingRoot: __dirname,
 
   // Compress HTTP responses (gzip/brotli) — free perf win
